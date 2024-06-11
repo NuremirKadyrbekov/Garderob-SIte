@@ -1,0 +1,110 @@
+HTML 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garderob Karakol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <header class="header" id="home">
+        <img src="./img/women.png" alt="" class="bgc1">
+            <img src="./img/women5.png" alt="" class="bgc2">
+            <div class="overlay"></div>
+        <div class="container">
+            <h1>Garderob Karakol</h1>
+            <p>Мода для Всех</p>
+
+         <a href="#products"><button class="boton-elegante" >Перейти</button></a>   
+
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#products">Наши продукты</a></li>
+                <li><a href="#location">Местоположение</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="parallax" class="parallax"></section>
+    <section id="about" class="inspiration" >
+        <div class="container-about">
+            <div class="inspiration-content">
+                <div class="inspiration-image">
+                    <img src="./img/women2.jpg" alt="Inspiration Image" >
+                </div>
+                <div class="inspiration-text">
+                    <h2>Мы вдохновляем людей в любом возрасте выглядеть на все сто</h2>
+                    <p>Наш магазин Garderob Karakol предлагает широкий ассортимент стильной и качественной одежды для всех возрастов. Мы стремимся вдохновлять вас каждый день, предлагая одежду, которая подчеркивает вашу индивидуальность и помогает вам чувствовать себя уверенно и комфортно в любой ситуации.</p>
+                    <h3>Наша философия</h3>
+                    <p>Мы верим, что мода должна быть доступной для каждого. Наша философия заключается в том, чтобы предложить нашим клиентам не только стильную одежду, но и отличное качество по разумным ценам. Мы постоянно обновляем наш ассортимент, следуя последним модным тенденциям, и заботимся о том, чтобы каждая вещь из нашего магазина приносила радость и удовлетворение.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="parallax" class="parallax1"></section> -->
+    
+
+    <section id="products" class="products">
+        <div class="container-product">
+            <h2>Товары со скидкой</h2>
+            <div class="slider-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="slider">
+                    <div class="slider-items" id="slider-items">
+                        <!-- Products will be inserted here by JavaScript -->
+                    </div>
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section id="location" class="location">
+        <div class="container">
+            <h2  class="titleMap">Наше местоположение</h2>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.4830949695062!2d78.38394519919738!3d42.492990200000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865baa93055ae3%3A0x571bad61cb0bc818!2z0JHRg9GC0LjQuiDQodGC0LjQu9GM0L3Ri9C5INCz0LDRgNC00LXRgNC-0LE!5e0!3m2!1sru!2skg!4v1717875988531!5m2!1sru!2skg" width="1340" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 >Свяжитесь с нами</h2>
+            <form class="contact-form" >
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Эл. почта:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Garderob Karakol. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
